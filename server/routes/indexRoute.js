@@ -7,7 +7,9 @@ const router = express.Router();
  * HOME
  */
 router.get("/", (req, res) => {
-  res.render("pages/index");
+  res.render("pages/index", {
+    title: "Prexlyn Properties | Home"
+  });
 });
 
 module.exports = router;
