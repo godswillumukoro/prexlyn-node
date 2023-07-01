@@ -28,4 +28,43 @@ router.get("/about", (req, res) => {
   });
 });
 
+/* ***
+ * GET /
+ * LANDS
+ */
+router.get("/lands", (req, res) => {
+  const locals = {
+    title: "Prexlyn Properties | Lands",
+  };
+  res.render("pages/lands", {
+    locals,
+  });
+});
+
+/* ***
+ * GET /
+ * HOUSES
+ */
+router.get("/houses", (req, res) => {
+  const locals = {
+    title: "Prexlyn Properties | Houses",
+  };
+  res.render("pages/houses", {
+    locals,
+  });
+});
+
+/* ***
+ * GET /
+ * CONTACT
+ */
+router.get("/contact", (req, res) => {
+  const locals = {
+    title: "Prexlyn Properties | Contact us",
+  };
+  res.render("pages/contact", {
+    locals,
+  });
+});
+
 module.exports = router;
