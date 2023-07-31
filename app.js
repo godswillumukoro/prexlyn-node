@@ -1,4 +1,7 @@
-require("dotenv").config();
+if (process.env.NODE_ENV == "development") {
+   //do something in development
+  require("dotenv").config();
+}
 
 const express = require("express");
 var favicon = require("serve-favicon");
